@@ -1,7 +1,10 @@
-**DETR**: End-to-End Object Detection with Transformers
+**End-to-End Damage Detection with Transformers**
+
+Based on DETR
 ========
 **Application**: Structural Health Monitoring
-For YOLO data: https://github.com/clive819/Modified-DETR.git
+
+* For YOLO data: https://github.com/clive819/Modified-DETR.git
 
 
 PyTorch training code and pretrained models for **DETR** (**DE**tection **TR**ansformer).
