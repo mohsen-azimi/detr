@@ -3,8 +3,10 @@ import torch.utils.data
 import torchvision
 
 from .coco import build as build_coco
+
 from .face import build as build_face
 from .crack import build as build_crack
+from .coco_playground import build as build_playground
 
 
 def get_coco_api_from_dataset(dataset):
@@ -24,6 +26,9 @@ def build_dataset(image_set, args):
         return build_face(image_set, args)
     if args.dataset_file == 'crack':
         return build_crack(image_set, args)
+    if args.dataset_file == 'coco_playground':
+        return build_playground(image_set, args)
+
     if args.dataset_file == 'coco_panoptic':
         # to avoid making panopticapi required for coco
         from .coco_panoptic import build as build_coco_panoptic

@@ -317,6 +317,10 @@ def build(args):
     #     num_classes = 250
     if args.dataset_file == "face" or "crack":
         num_classes = 1
+
+    if args.dataset_file == "coco_playground":
+        num_classes = 5
+
     device = torch.device(args.device)
 
     backbone = build_backbone(args)
