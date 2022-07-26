@@ -2,7 +2,7 @@
 
 """Usage:
 
-python main_crack.py --dataset_file crack --data_path ../datasets/ --output_dir output
+python main_crack_detection.py --dataset_file crack --data_path ../datasets/ --output_dir output
 
 """
 

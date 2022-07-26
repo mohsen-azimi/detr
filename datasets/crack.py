@@ -149,8 +149,8 @@ def build(image_set, args):
     assert root.exists(), f'provided Crack path {root} does not exist'
     mode = 'instances'
     PATHS = {
-        "train": (root / "crack/train", root / f'crack/coco_annotations_train.json'),
-        "val": (root / "crack/val", root / f'crack/coco_annotations_val.json'),
+        "train": (root / "ozgenel/rgb", root / f'ozgenel/annotations/instances_train.json'),
+        "val": (root / "ozgenel/rgb", root / f'ozgenel/annotations/instances_val.json'),
     }
 
     img_folder, ann_file = PATHS[image_set]
